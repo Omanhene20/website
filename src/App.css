@@ -1,0 +1,76 @@
+/* Reset default margins and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure that the App container uses the full viewport height */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+}
+
+/* Ensure the header spans the full width */
+.App-header {
+  background-color: #4CAF50;
+  padding: 15px;
+  color: white;
+  width: 100%;
+}
+
+/* Navigation styling */
+.App-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.App-header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.App-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the main content area grows to fill remaining space */
+main {
+  flex: 1; /* Allow main content to expand and fill available space */
+  padding: 20px;
+  width: 100%;
+}
+
+/* Styling for video gallery */
+.VideoGallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.VideoGallery video {
+  margin: 10px;
+  max-width: 100%; /* Ensure videos do not exceed container width */
+}
+
+/* Footer styling */
+.App-footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
